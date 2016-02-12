@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Reference for  http://services.dominos.com.au/OnlineOrdering/v22/Store.svc/json/GetPaymentMethods</title>
+    <style>BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; } #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; } A:link { color: #336699; font-weight: bold; text-decoration: underline; } A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; } A:active { color: #336699; font-weight: bold; text-decoration: underline; } .heading1 { background-color: #003366; border-bottom: #336699 6px solid; color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal;margin: 0em 0em 10px -20px; padding-bottom: 8px; padding-left: 30px;padding-top: 16px;} pre { font-size:small; background-color: #e5e5cc; padding: 5px; font-family: Courier New; margin-top: 0px; border: 1px #f0f0e0 solid; white-space: pre-wrap; white-space: -pre-wrap; word-wrap: break-word; } table { border-collapse: collapse; border-spacing: 0px; font-family: Verdana;} table th { border-right: 2px white solid; border-bottom: 2px white solid; font-weight: bold; background-color: #cecf9c;} table td { border-right: 2px white solid; border-bottom: 2px white solid; background-color: #e5e5cc;}</style>
+  </head>
+  <body>
+    <div id="content">
+      <p class="heading1">Reference for  http://services.dominos.com.au/OnlineOrdering/v22/Store.svc/json/GetPaymentMethods</p>
+      <p></p>
+      <p xmlns="http://www.w3.org/1999/xhtml">
+        <b>Url: </b>
+        <span class="uri-template">http://services.dominos.com.au/OnlineOrdering/v22/Store.svc/json/GetPaymentMethods</span>
+      </p>
+      <p xmlns="http://www.w3.org/1999/xhtml">
+        <b>HTTP Method: </b>
+        <span class="method">POST</span>
+      </p>
+      <table>
+        <tr>
+          <th>Message direction</th>
+          <th>Format</th>
+          <th>Body</th>
+        </tr>
+        <tr>
+          <td>Request</td>
+          <td>Xml</td>
+          <td>
+            <a href="#request-xml">Example</a>,<a href="#request-schema">Schema</a></td>
+        </tr>
+        <tr>
+          <td>Request</td>
+          <td>Json</td>
+          <td>
+            <a href="#request-json">Example</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Response</td>
+          <td>Xml</td>
+          <td>
+            <a href="#response-xml">Example</a>,<a href="#response-schema">Schema</a></td>
+        </tr>
+        <tr>
+          <td>Response</td>
+          <td>Json</td>
+          <td>
+            <a href="#response-json">Example</a>
+          </td>
+        </tr>
+      </table>
+      <p>
+        <a name="#request-xml">The following is an example request Xml body:</a>
+        <pre class="request-xml">&lt;GetPaymentMethodsRequest xmlns="http://services.dominos.com.au/OnlineOrdering/StoreLocator/v2_2/Data"&gt;
+  &lt;RequestKey xmlns="http://services.dominos.com.au/Common/v2_2/Data"&gt;
+    &lt;Country xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Country&gt;
+    &lt;Culture xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Culture&gt;
+    &lt;Application xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Application&gt;
+    &lt;Version xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Version&gt;
+    &lt;Resolution xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Resolution&gt;
+    &lt;SessionId xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/SessionId&gt;
+  &lt;/RequestKey&gt;
+  &lt;StoreNumber&gt;2147483647&lt;/StoreNumber&gt;
+  &lt;ServiceMethod&gt;String content&lt;/ServiceMethod&gt;
+&lt;/GetPaymentMethodsRequest&gt;</pre>
+      </p>
+      <p>
+        <a name="#request-json">The following is an example request Json body:</a>
+        <pre class="request-json">{
+	"RequestKey":{
+		"Country":"String content",
+		"Culture":"String content",
+		"Application":"String content",
+		"Version":"String content",
+		"Resolution":"String content",
+		"SessionId":"String content"
+	},
+	"StoreNumber":2147483647,
+	"ServiceMethod":"String content"
+}</pre>
+      </p>
+      <p>
+        <a name="#response-xml">The following is an example response Xml body:</a>
+        <pre class="response-xml">&lt;GetPaymentMethodsResponse xmlns="http://services.dominos.com.au/OnlineOrdering/StoreLocator/v2_2/Data"&gt;
+  &lt;Messages xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;
+    &lt;Message&gt;
+      &lt;Code&gt;String content&lt;/Code&gt;
+      &lt;Type&gt;String content&lt;/Type&gt;
+      &lt;Text&gt;String content&lt;/Text&gt;
+    &lt;/Message&gt;
+    &lt;Message&gt;
+      &lt;Code&gt;String content&lt;/Code&gt;
+      &lt;Type&gt;String content&lt;/Type&gt;
+      &lt;Text&gt;String content&lt;/Text&gt;
+    &lt;/Message&gt;
+  &lt;/Messages&gt;
+  &lt;PaymentMethods&gt;
+    &lt;PaymentMethod&gt;
+      &lt;Name&gt;String content&lt;/Name&gt;
+      &lt;PaymentProvider&gt;String content&lt;/PaymentProvider&gt;
+      &lt;MerchantId&gt;String content&lt;/MerchantId&gt;
+      &lt;MediaItems&gt;
+        &lt;MediaItem xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;
+          &lt;Role&gt;String content&lt;/Role&gt;
+          &lt;Tag&gt;String content&lt;/Tag&gt;
+          &lt;Text&gt;String content&lt;/Text&gt;
+          &lt;Uri&gt;String content&lt;/Uri&gt;
+        &lt;/MediaItem&gt;
+        &lt;MediaItem xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;
+          &lt;Role&gt;String content&lt;/Role&gt;
+          &lt;Tag&gt;String content&lt;/Tag&gt;
+          &lt;Text&gt;String content&lt;/Text&gt;
+          &lt;Uri&gt;String content&lt;/Uri&gt;
+        &lt;/MediaItem&gt;
+      &lt;/MediaItems&gt;
+    &lt;/PaymentMethod&gt;
+    &lt;PaymentMethod&gt;
+      &lt;Name&gt;String content&lt;/Name&gt;
+      &lt;PaymentProvider&gt;String content&lt;/PaymentProvider&gt;
+      &lt;MerchantId&gt;String content&lt;/MerchantId&gt;
+      &lt;MediaItems&gt;
+        &lt;MediaItem xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;
+          &lt;Role&gt;String content&lt;/Role&gt;
+          &lt;Tag&gt;String content&lt;/Tag&gt;
+          &lt;Text&gt;String content&lt;/Text&gt;
+          &lt;Uri&gt;String content&lt;/Uri&gt;
+        &lt;/MediaItem&gt;
+        &lt;MediaItem xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;
+          &lt;Role&gt;String content&lt;/Role&gt;
+          &lt;Tag&gt;String content&lt;/Tag&gt;
+          &lt;Text&gt;String content&lt;/Text&gt;
+          &lt;Uri&gt;String content&lt;/Uri&gt;
+        &lt;/MediaItem&gt;
+      &lt;/MediaItems&gt;
+    &lt;/PaymentMethod&gt;
+  &lt;/PaymentMethods&gt;
+&lt;/GetPaymentMethodsResponse&gt;</pre>
+      </p>
+      <p>
+        <a name="#response-json">The following is an example response Json body:</a>
+        <pre class="response-json">{
+	"Messages":[{
+		"Code":"String content",
+		"Type":"String content",
+		"Text":"String content"
+	}],
+	"PaymentMethods":[{
+		"Name":"String content",
+		"PaymentProvider":"String content",
+		"MerchantId":"String content",
+		"MediaItems":[{
+			"Role":"String content",
+			"Tag":"String content",
+			"Text":"String content",
+			"Uri":"String content"
+		}]
+	}]
+}</pre>
+      </p>
+      <p>
+        <a name="#request-schema">The following is the request Xml Schema:</a>
+        <pre class="request-schema">&lt;xs:schema xmlns:tns="http://services.dominos.com.au/OnlineOrdering/StoreLocator/v2_2/Data" elementFormDefault="qualified" targetNamespace="http://services.dominos.com.au/OnlineOrdering/StoreLocator/v2_2/Data" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:import namespace="http://services.dominos.com.au/Common/v2_2/Data" /&gt;
+  &lt;xs:complexType name="GetPaymentMethodsRequest"&gt;
+    &lt;xs:complexContent mixed="false"&gt;
+      &lt;xs:extension xmlns:q1="http://services.dominos.com.au/Common/v2_2/Data" base="q1:DominosRequest"&gt;
+        &lt;xs:sequence&gt;
+          &lt;xs:element minOccurs="0" name="StoreNumber" type="xs:int" /&gt;
+          &lt;xs:element minOccurs="0" name="ServiceMethod" nillable="true" type="xs:string" /&gt;
+        &lt;/xs:sequence&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="GetPaymentMethodsRequest" nillable="true" type="tns:GetPaymentMethodsRequest" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <a name="#request-schema">Additional request Xml Schemas:</a>
+        <pre class="request-schema">&lt;xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:element name="anyType" nillable="true" type="xs:anyType" /&gt;
+  &lt;xs:element name="anyURI" nillable="true" type="xs:anyURI" /&gt;
+  &lt;xs:element name="base64Binary" nillable="true" type="xs:base64Binary" /&gt;
+  &lt;xs:element name="boolean" nillable="true" type="xs:boolean" /&gt;
+  &lt;xs:element name="byte" nillable="true" type="xs:byte" /&gt;
+  &lt;xs:element name="dateTime" nillable="true" type="xs:dateTime" /&gt;
+  &lt;xs:element name="decimal" nillable="true" type="xs:decimal" /&gt;
+  &lt;xs:element name="double" nillable="true" type="xs:double" /&gt;
+  &lt;xs:element name="float" nillable="true" type="xs:float" /&gt;
+  &lt;xs:element name="int" nillable="true" type="xs:int" /&gt;
+  &lt;xs:element name="long" nillable="true" type="xs:long" /&gt;
+  &lt;xs:element name="QName" nillable="true" type="xs:QName" /&gt;
+  &lt;xs:element name="short" nillable="true" type="xs:short" /&gt;
+  &lt;xs:element name="string" nillable="true" type="xs:string" /&gt;
+  &lt;xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" /&gt;
+  &lt;xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" /&gt;
+  &lt;xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" /&gt;
+  &lt;xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" /&gt;
+  &lt;xs:element name="char" nillable="true" type="tns:char" /&gt;
+  &lt;xs:simpleType name="char"&gt;
+    &lt;xs:restriction base="xs:int" /&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name="duration" nillable="true" type="tns:duration" /&gt;
+  &lt;xs:simpleType name="duration"&gt;
+    &lt;xs:restriction base="xs:duration"&gt;
+      &lt;xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" /&gt;
+      &lt;xs:minInclusive value="-P10675199DT2H48M5.4775808S" /&gt;
+      &lt;xs:maxInclusive value="P10675199DT2H48M5.4775807S" /&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name="guid" nillable="true" type="tns:guid" /&gt;
+  &lt;xs:simpleType name="guid"&gt;
+    &lt;xs:restriction base="xs:string"&gt;
+      &lt;xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" /&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:attribute name="FactoryType" type="xs:QName" /&gt;
+  &lt;xs:attribute name="Id" type="xs:ID" /&gt;
+  &lt;xs:attribute name="Ref" type="xs:IDREF" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <pre class="request-schema">&lt;xs:schema xmlns:tns="http://services.dominos.com.au/Common/v2_2/Data" elementFormDefault="qualified" targetNamespace="http://services.dominos.com.au/Common/v2_2/Data" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:import namespace="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" /&gt;
+  &lt;xs:complexType name="DominosRequest"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" name="RequestKey" nillable="true" xmlns:q1="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" type="q1:RequestKey" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="DominosRequest" nillable="true" type="tns:DominosRequest" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <pre class="request-schema">&lt;xs:schema xmlns:tns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" elementFormDefault="qualified" targetNamespace="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:complexType name="RequestKey"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Application" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Resolution" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="SessionId" nillable="true" type="xs:string" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="RequestKey" nillable="true" type="tns:RequestKey" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <pre class="request-schema">&lt;xs:schema targetNamespace="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:element name="schema"&gt;
+    &lt;xs:complexType /&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <a name="#response-schema">The following is the response Xml Schema:</a>
+        <pre class="response-schema">&lt;xs:schema xmlns:tns="http://services.dominos.com.au/OnlineOrdering/StoreLocator/v2_2/Data" elementFormDefault="qualified" targetNamespace="http://services.dominos.com.au/OnlineOrdering/StoreLocator/v2_2/Data" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:import namespace="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" /&gt;
+  &lt;xs:complexType name="GetPaymentMethodsResponse"&gt;
+    &lt;xs:complexContent mixed="false"&gt;
+      &lt;xs:extension xmlns:q1="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" base="q1:OloResponse"&gt;
+        &lt;xs:sequence&gt;
+          &lt;xs:element minOccurs="0" name="PaymentMethods" nillable="true" type="tns:ArrayOfPaymentMethod" /&gt;
+        &lt;/xs:sequence&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="GetPaymentMethodsResponse" nillable="true" type="tns:GetPaymentMethodsResponse" /&gt;
+  &lt;xs:complexType name="ArrayOfPaymentMethod"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentMethod" nillable="true" type="tns:PaymentMethod" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="ArrayOfPaymentMethod" nillable="true" type="tns:ArrayOfPaymentMethod" /&gt;
+  &lt;xs:complexType name="PaymentMethod"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="PaymentProvider" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="MerchantId" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="MediaItems" nillable="true" xmlns:q2="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" type="q2:ArrayOfMediaItem" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="PaymentMethod" nillable="true" type="tns:PaymentMethod" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <a name="#response-schema">Additional response Xml Schemas:</a>
+        <pre class="response-schema">&lt;xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:element name="anyType" nillable="true" type="xs:anyType" /&gt;
+  &lt;xs:element name="anyURI" nillable="true" type="xs:anyURI" /&gt;
+  &lt;xs:element name="base64Binary" nillable="true" type="xs:base64Binary" /&gt;
+  &lt;xs:element name="boolean" nillable="true" type="xs:boolean" /&gt;
+  &lt;xs:element name="byte" nillable="true" type="xs:byte" /&gt;
+  &lt;xs:element name="dateTime" nillable="true" type="xs:dateTime" /&gt;
+  &lt;xs:element name="decimal" nillable="true" type="xs:decimal" /&gt;
+  &lt;xs:element name="double" nillable="true" type="xs:double" /&gt;
+  &lt;xs:element name="float" nillable="true" type="xs:float" /&gt;
+  &lt;xs:element name="int" nillable="true" type="xs:int" /&gt;
+  &lt;xs:element name="long" nillable="true" type="xs:long" /&gt;
+  &lt;xs:element name="QName" nillable="true" type="xs:QName" /&gt;
+  &lt;xs:element name="short" nillable="true" type="xs:short" /&gt;
+  &lt;xs:element name="string" nillable="true" type="xs:string" /&gt;
+  &lt;xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" /&gt;
+  &lt;xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" /&gt;
+  &lt;xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" /&gt;
+  &lt;xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" /&gt;
+  &lt;xs:element name="char" nillable="true" type="tns:char" /&gt;
+  &lt;xs:simpleType name="char"&gt;
+    &lt;xs:restriction base="xs:int" /&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name="duration" nillable="true" type="tns:duration" /&gt;
+  &lt;xs:simpleType name="duration"&gt;
+    &lt;xs:restriction base="xs:duration"&gt;
+      &lt;xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" /&gt;
+      &lt;xs:minInclusive value="-P10675199DT2H48M5.4775808S" /&gt;
+      &lt;xs:maxInclusive value="P10675199DT2H48M5.4775807S" /&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name="guid" nillable="true" type="tns:guid" /&gt;
+  &lt;xs:simpleType name="guid"&gt;
+    &lt;xs:restriction base="xs:string"&gt;
+      &lt;xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" /&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:attribute name="FactoryType" type="xs:QName" /&gt;
+  &lt;xs:attribute name="Id" type="xs:ID" /&gt;
+  &lt;xs:attribute name="Ref" type="xs:IDREF" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <pre class="response-schema">&lt;xs:schema xmlns:tns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" elementFormDefault="qualified" targetNamespace="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:complexType name="OloResponse"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" name="Messages" nillable="true" type="tns:ArrayOfMessage"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:appinfo&gt;
+            &lt;DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" /&gt;
+          &lt;/xs:appinfo&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="OloResponse" nillable="true" type="tns:OloResponse" /&gt;
+  &lt;xs:complexType name="ArrayOfMessage"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" maxOccurs="unbounded" name="Message" nillable="true" type="tns:Message" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="ArrayOfMessage" nillable="true" type="tns:ArrayOfMessage" /&gt;
+  &lt;xs:complexType name="Message"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="Message" nillable="true" type="tns:Message" /&gt;
+  &lt;xs:complexType name="ArrayOfMediaItem"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" maxOccurs="unbounded" name="MediaItem" nillable="true" type="tns:MediaItem" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="ArrayOfMediaItem" nillable="true" type="tns:ArrayOfMediaItem" /&gt;
+  &lt;xs:complexType name="MediaItem"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Tag" nillable="true" type="xs:string"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:appinfo&gt;
+            &lt;DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" /&gt;
+          &lt;/xs:appinfo&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+      &lt;xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Uri" nillable="true" type="xs:string"&gt;
+        &lt;xs:annotation&gt;
+          &lt;xs:appinfo&gt;
+            &lt;DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" /&gt;
+          &lt;/xs:appinfo&gt;
+        &lt;/xs:annotation&gt;
+      &lt;/xs:element&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="MediaItem" nillable="true" type="tns:MediaItem" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <pre class="response-schema">&lt;xs:schema targetNamespace="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:element name="schema"&gt;
+    &lt;xs:complexType /&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+    </div>
+  </body>
+</html>

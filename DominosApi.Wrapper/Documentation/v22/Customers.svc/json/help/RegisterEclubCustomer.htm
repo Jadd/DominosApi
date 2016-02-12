@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Reference for  http://services.dominos.com.au/OnlineOrdering/v22/Customers.svc/json/RegisterEclubCustomer</title>
+    <style>BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; } #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; } A:link { color: #336699; font-weight: bold; text-decoration: underline; } A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; } A:active { color: #336699; font-weight: bold; text-decoration: underline; } .heading1 { background-color: #003366; border-bottom: #336699 6px solid; color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal;margin: 0em 0em 10px -20px; padding-bottom: 8px; padding-left: 30px;padding-top: 16px;} pre { font-size:small; background-color: #e5e5cc; padding: 5px; font-family: Courier New; margin-top: 0px; border: 1px #f0f0e0 solid; white-space: pre-wrap; white-space: -pre-wrap; word-wrap: break-word; } table { border-collapse: collapse; border-spacing: 0px; font-family: Verdana;} table th { border-right: 2px white solid; border-bottom: 2px white solid; font-weight: bold; background-color: #cecf9c;} table td { border-right: 2px white solid; border-bottom: 2px white solid; background-color: #e5e5cc;}</style>
+  </head>
+  <body>
+    <div id="content">
+      <p class="heading1">Reference for  http://services.dominos.com.au/OnlineOrdering/v22/Customers.svc/json/RegisterEclubCustomer</p>
+      <p></p>
+      <p xmlns="http://www.w3.org/1999/xhtml">
+        <b>Url: </b>
+        <span class="uri-template">http://services.dominos.com.au/OnlineOrdering/v22/Customers.svc/json/RegisterEclubCustomer</span>
+      </p>
+      <p xmlns="http://www.w3.org/1999/xhtml">
+        <b>HTTP Method: </b>
+        <span class="method">POST</span>
+      </p>
+      <table>
+        <tr>
+          <th>Message direction</th>
+          <th>Format</th>
+          <th>Body</th>
+        </tr>
+        <tr>
+          <td>Request</td>
+          <td>Xml</td>
+          <td>
+            <a href="#request-xml">Example</a>,<a href="#request-schema">Schema</a></td>
+        </tr>
+        <tr>
+          <td>Request</td>
+          <td>Json</td>
+          <td>
+            <a href="#request-json">Example</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Response</td>
+          <td>N/A</td>
+          <td>The Response body is empty.</td>
+        </tr>
+      </table>
+      <p>
+        <a name="#request-xml">The following is an example request Xml body:</a>
+        <pre class="request-xml">&lt;RegisterEclubRequest xmlns="http://services.dominos.com.au/OnlineOrdering/CustomerManagement/v2_2/Data"&gt;
+  &lt;RequestKey xmlns="http://services.dominos.com.au/Common/v2_2/Data"&gt;
+    &lt;Country xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Country&gt;
+    &lt;Culture xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Culture&gt;
+    &lt;Application xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Application&gt;
+    &lt;Version xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Version&gt;
+    &lt;Resolution xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Resolution&gt;
+    &lt;SessionId xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/SessionId&gt;
+  &lt;/RequestKey&gt;
+  &lt;PhoneNumber&gt;String content&lt;/PhoneNumber&gt;
+  &lt;Name&gt;String content&lt;/Name&gt;
+  &lt;Email&gt;String content&lt;/Email&gt;
+  &lt;CustomerAddress&gt;
+    &lt;PostalCode xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/PostalCode&gt;
+    &lt;State xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/State&gt;
+    &lt;StreetName xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/StreetName&gt;
+    &lt;StreetNo xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/StreetNo&gt;
+    &lt;Suburb xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/Suburb&gt;
+    &lt;UnitNo xmlns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data"&gt;String content&lt;/UnitNo&gt;
+  &lt;/CustomerAddress&gt;
+  &lt;StoreNumber&gt;2147483647&lt;/StoreNumber&gt;
+  &lt;AcceptEmails&gt;true&lt;/AcceptEmails&gt;
+  &lt;AcceptMessages&gt;true&lt;/AcceptMessages&gt;
+  &lt;Representative&gt;String content&lt;/Representative&gt;
+&lt;/RegisterEclubRequest&gt;</pre>
+      </p>
+      <p>
+        <a name="#request-json">The following is an example request Json body:</a>
+        <pre class="request-json">{
+	"RequestKey":{
+		"Country":"String content",
+		"Culture":"String content",
+		"Application":"String content",
+		"Version":"String content",
+		"Resolution":"String content",
+		"SessionId":"String content"
+	},
+	"PhoneNumber":"String content",
+	"Name":"String content",
+	"Email":"String content",
+	"CustomerAddress":{
+		"PostalCode":"String content",
+		"State":"String content",
+		"StreetName":"String content",
+		"StreetNo":"String content",
+		"Suburb":"String content",
+		"UnitNo":"String content"
+	},
+	"StoreNumber":2147483647,
+	"AcceptEmails":true,
+	"AcceptMessages":true,
+	"Representative":"String content"
+}</pre>
+      </p>
+      <p>
+        <a name="#request-schema">The following is the request Xml Schema:</a>
+        <pre class="request-schema">&lt;xs:schema xmlns:tns="http://services.dominos.com.au/OnlineOrdering/CustomerManagement/v2_2/Data" elementFormDefault="qualified" targetNamespace="http://services.dominos.com.au/OnlineOrdering/CustomerManagement/v2_2/Data" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:import namespace="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" /&gt;
+  &lt;xs:import namespace="http://services.dominos.com.au/Common/v2_2/Data" /&gt;
+  &lt;xs:complexType name="RegisterEclubRequest"&gt;
+    &lt;xs:complexContent mixed="false"&gt;
+      &lt;xs:extension xmlns:q1="http://services.dominos.com.au/Common/v2_2/Data" base="q1:DominosRequest"&gt;
+        &lt;xs:sequence&gt;
+          &lt;xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" /&gt;
+          &lt;xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" /&gt;
+          &lt;xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" /&gt;
+          &lt;xs:element minOccurs="0" name="CustomerAddress" nillable="true" xmlns:q2="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" type="q2:Address" /&gt;
+          &lt;xs:element minOccurs="0" name="StoreNumber" type="xs:int" /&gt;
+          &lt;xs:element minOccurs="0" name="AcceptEmails" type="xs:boolean" /&gt;
+          &lt;xs:element minOccurs="0" name="AcceptMessages" type="xs:boolean" /&gt;
+          &lt;xs:element minOccurs="0" name="Representative" nillable="true" type="xs:string" /&gt;
+        &lt;/xs:sequence&gt;
+      &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="RegisterEclubRequest" nillable="true" type="tns:RegisterEclubRequest" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <a name="#request-schema">Additional request Xml Schemas:</a>
+        <pre class="request-schema">&lt;xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:element name="anyType" nillable="true" type="xs:anyType" /&gt;
+  &lt;xs:element name="anyURI" nillable="true" type="xs:anyURI" /&gt;
+  &lt;xs:element name="base64Binary" nillable="true" type="xs:base64Binary" /&gt;
+  &lt;xs:element name="boolean" nillable="true" type="xs:boolean" /&gt;
+  &lt;xs:element name="byte" nillable="true" type="xs:byte" /&gt;
+  &lt;xs:element name="dateTime" nillable="true" type="xs:dateTime" /&gt;
+  &lt;xs:element name="decimal" nillable="true" type="xs:decimal" /&gt;
+  &lt;xs:element name="double" nillable="true" type="xs:double" /&gt;
+  &lt;xs:element name="float" nillable="true" type="xs:float" /&gt;
+  &lt;xs:element name="int" nillable="true" type="xs:int" /&gt;
+  &lt;xs:element name="long" nillable="true" type="xs:long" /&gt;
+  &lt;xs:element name="QName" nillable="true" type="xs:QName" /&gt;
+  &lt;xs:element name="short" nillable="true" type="xs:short" /&gt;
+  &lt;xs:element name="string" nillable="true" type="xs:string" /&gt;
+  &lt;xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" /&gt;
+  &lt;xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" /&gt;
+  &lt;xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" /&gt;
+  &lt;xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" /&gt;
+  &lt;xs:element name="char" nillable="true" type="tns:char" /&gt;
+  &lt;xs:simpleType name="char"&gt;
+    &lt;xs:restriction base="xs:int" /&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name="duration" nillable="true" type="tns:duration" /&gt;
+  &lt;xs:simpleType name="duration"&gt;
+    &lt;xs:restriction base="xs:duration"&gt;
+      &lt;xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" /&gt;
+      &lt;xs:minInclusive value="-P10675199DT2H48M5.4775808S" /&gt;
+      &lt;xs:maxInclusive value="P10675199DT2H48M5.4775807S" /&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:element name="guid" nillable="true" type="tns:guid" /&gt;
+  &lt;xs:simpleType name="guid"&gt;
+    &lt;xs:restriction base="xs:string"&gt;
+      &lt;xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" /&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;
+  &lt;xs:attribute name="FactoryType" type="xs:QName" /&gt;
+  &lt;xs:attribute name="Id" type="xs:ID" /&gt;
+  &lt;xs:attribute name="Ref" type="xs:IDREF" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <pre class="request-schema">&lt;xs:schema xmlns:tns="http://services.dominos.com.au/Common/v2_2/Data" elementFormDefault="qualified" targetNamespace="http://services.dominos.com.au/Common/v2_2/Data" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:import namespace="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" /&gt;
+  &lt;xs:complexType name="DominosRequest"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" name="RequestKey" nillable="true" xmlns:q1="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" type="q1:RequestKey" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="DominosRequest" nillable="true" type="tns:DominosRequest" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <pre class="request-schema">&lt;xs:schema xmlns:tns="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" elementFormDefault="qualified" targetNamespace="http://services.dominos.com.au/OnlineOrdering/Common/v2_2/Data" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:complexType name="RequestKey"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Culture" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Application" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Resolution" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="SessionId" nillable="true" type="xs:string" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="RequestKey" nillable="true" type="tns:RequestKey" /&gt;
+  &lt;xs:complexType name="Address"&gt;
+    &lt;xs:sequence&gt;
+      &lt;xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="State" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="StreetName" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="StreetNo" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="Suburb" nillable="true" type="xs:string" /&gt;
+      &lt;xs:element minOccurs="0" name="UnitNo" nillable="true" type="xs:string" /&gt;
+    &lt;/xs:sequence&gt;
+  &lt;/xs:complexType&gt;
+  &lt;xs:element name="Address" nillable="true" type="tns:Address" /&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+      <p>
+        <pre class="request-schema">&lt;xs:schema targetNamespace="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;xs:element name="schema"&gt;
+    &lt;xs:complexType /&gt;
+  &lt;/xs:element&gt;
+&lt;/xs:schema&gt;</pre>
+      </p>
+    </div>
+  </body>
+</html>
